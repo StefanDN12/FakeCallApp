@@ -1,6 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FakeCallApp</string>
     <string name="txtBtnCall">Call</string>
     <string name="txtIntroduceNum">Introduce numero de telefono</string>
-
 </resources>
