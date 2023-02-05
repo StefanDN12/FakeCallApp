@@ -2,5 +2,5 @@
     <string name="app_name">FakeCallApp</string>
     <string name="txtBtnCall">Call</string>
     <string name="txtIntroduceNum">Introduce numero de telefono</string>
-
+    <string name="txtCalling">Calling...</string>
 </resources>

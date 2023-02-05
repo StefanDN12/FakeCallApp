@@ -1,4 +1,6 @@
 package com.stefan.fakecallapp.presenter
 
-class FakeAppPresenter {
+import com.stefan.fakecallapp.interfaces.OperationView
+
+class FakeAppPresenter(view: OperationView) {
 }
