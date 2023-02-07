@@ -10,7 +10,7 @@ import com.stefan.fakecallapp.presenter.FakeAppPresenter
 
 class FakeAppMainActivity : AppCompatActivity(), OperationView {
     private lateinit var fakeappBinding: ActivityMainBinding
-    private lateinit var goCallPrst : FakeAppPresenter
+    private lateinit var goCallPrst : OperationPresenter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         fakeappBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -21,6 +21,10 @@ class FakeAppMainActivity : AppCompatActivity(), OperationView {
 
     fun init(){
         goCallPrst = FakeAppPresenter(this)
+
+        fakeappBinding.btnCall.setOnClickListener {
+            makeCall()
+        }
     }
 
     override fun showCalling() {
@@ -28,6 +32,6 @@ class FakeAppMainActivity : AppCompatActivity(), OperationView {
     }
 
     fun makeCall(){
-        
+        goCallPrst.goCall(fakeappBinding.editMobilePhonEnter.text.toString())
     }
 }
