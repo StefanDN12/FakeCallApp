@@ -1,5 +1,6 @@
 package com.stefan.fakecallapp.presenter
 
+import android.app.Activity
 import android.content.Context
 import com.stefan.fakecallapp.interfaces.OperationPresenter
 import com.stefan.fakecallapp.interfaces.OperationView
@@ -10,7 +11,7 @@ class FakeAppPresenter(view: OperationView):OperationPresenter {
     var view = view
     var model = FakeAppModel(this)
 
-    override fun goCall(number: String, context: Context) {
+    override fun goCall(number: String, context: Activity) {
         model.makeCall(number, context)
     }
 

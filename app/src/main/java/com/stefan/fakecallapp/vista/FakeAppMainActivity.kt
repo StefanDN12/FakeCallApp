@@ -32,6 +32,6 @@ class FakeAppMainActivity : AppCompatActivity(), OperationView {
     }
 
     fun makeCall(){
-        goCallPrst.goCall(fakeappBinding.editMobilePhonEnter.text.toString())
+        goCallPrst.goCall(fakeappBinding.editMobilePhonEnter.text.toString(), this)
     }
 }
